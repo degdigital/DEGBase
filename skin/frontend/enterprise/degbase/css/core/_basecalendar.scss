@@ -1,0 +1,220 @@
+//Base Calendar
+
+.calendar {
+    position: relative;
+    display: none;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #fff;
+    font-size: 11px;
+    line-height: 110%;
+    color: #000;
+    cursor: default;
+    background: #d4d0c8;
+    font-family: tahoma,verdana,sans-serif;
+    table {
+        border-top: 1px solid #000;
+        border-right: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        border-left: 1px solid #000;
+        font-size: 11px;
+        color: #000;
+        cursor: default;
+        background: #d4d0c8;
+        font-family: tahoma,verdana,sans-serif;
+        td {
+            text-align: center;
+            vertical-align: middle;
+        }
+    }
+    button {
+        text-align: center;
+        padding: 1px;
+        border-top: 1px solid #fff;
+        border-right: 1px solid #000;
+        border-bottom: 1px solid #000;
+        border-left: 1px solid #fff;
+    }
+    .nav {
+        background: transparent url('../menuarrow.gif') no-repeat 100% 100%;
+    }
+    thead {
+        .title {
+            font-weight: bold;
+            padding: 1px;
+            border: 1px solid #000;
+            background: #848078;
+            color: #fff;
+            text-align: center;
+        }
+        .name {
+            border-bottom: 1px solid #000;
+            padding: 2px;
+            text-align: center;
+            background: #f4f0e8;
+        }
+        .weekend {
+            color: #f00;
+        }
+        .hilite {
+            background-color: #e4e0d8;
+        }
+        .active {
+            background-color: #c4c0b8;
+        }
+    }
+    tbody {
+        .day {
+            padding: 2px 4px 2px 2px;
+            width: 2em;
+            text-align: center;
+        }
+        .day.othermonth {
+            font-size: 80%;
+            color: #aaa;
+        }
+        .day.othermonth.oweekend {
+            color: #faa;
+        }
+    }
+    table {
+        .wn {
+            padding: 2px 3px 2px 2px;
+            border-right: 1px solid #000;
+            background: #f4f0e8;
+        }
+    }
+    tbody {
+        td {
+            @include box-sizing(border-box);
+            cursor: pointer;
+        }
+        td.hilite {
+            background-color: #eee;
+        }
+        td.active {
+            background-color: #fff;
+        }
+        td.selected {
+            font-weight: bold;
+            background: #e4e0d8;
+        }
+        td.weekend {
+            color: #f00;
+        }
+        td.today {
+            font-weight: bold;
+            color: #00f;
+        }
+        .rowhilite {
+            td {
+                background: #e4e0d8;
+                .wn {
+                    background: #d4d0c8;
+                }
+            }
+        }
+        .disabled {
+            color: #999;
+        }
+        .emptycell {
+            visibility: hidden;
+        }
+        .emptyrow {
+            display: none;
+        }
+    }
+    tfoot {
+        .footrow {
+
+        }
+        .ttip {
+            background: #f4f0e8;
+            padding: 1px;
+            border: 1px solid #000;
+            background: #848078;
+            color: #fff;
+            text-align: center;
+        }
+        .hilite {
+            background: #eee;
+        }
+        .active {
+            background: #fff;
+        }
+        .combo {
+            position: absolute;
+            display: none;
+            width: 4em;
+            top: 0px;
+            left: 0px;
+            cursor: default;
+            background: #e4e0d8;
+            font-size: 90%;
+            padding: 1px;
+            z-index: 100;
+            .label,
+            .label-IEfix {
+                text-align: center;
+                padding: 1px;
+            }
+            .label-IEfix {
+                width: 4em;
+            }
+            .active {
+                background: #c4c0b8;
+            }
+            .hilite {
+                background: #048;
+                color: #fea;
+            }
+            td.time {
+                border-top: 1px solid #000;
+                padding: 1px 0px;
+                text-align: center;
+                background-color: #f4f0e8;
+                .hour,
+                .minute,
+                .ampm {
+                    padding: 0px 3px 0px 4px;
+                    border: 1px solid #889;
+                    font-weight: bold;
+                    background-color: #fff;
+                }
+                .ampm {
+                    text-align: center;
+                }
+                .colon {
+                    padding: 0px 2px 0px 3px;
+                    font-weight: bold;
+                }
+                span.hilite {
+                    border-color: #000;
+                    background-color: #766;
+                    color: #fff;
+                }
+                span.active {
+                    border-color: #f00;
+                    background-color: #000;
+                    color: #0f0;
+                }
+
+            }
+        }
+    }
+    .button {
+        display: table-cell;
+        font-size: inherit;
+        font-weight: normal;
+        line-height: inherit;
+        color: #333;
+        border: 1px solid #333;
+        background: transparent;
+        border-radius: 0;
+    }
+    .button:hover {
+        border: 0;
+        background: inherit;
+    }
+}

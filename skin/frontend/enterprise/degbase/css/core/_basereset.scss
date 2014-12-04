@@ -1,0 +1,82 @@
+//Base Reset
+@media screen {
+	@viewport {
+		width: device-width;
+	    zoom: 1;
+		max-zoom: 1;
+	    user-zoom: fixed;
+	}
+}
+
+html {
+	 font-size: 62.5%;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	@include rem('font-size', 1.6rem);
+	line-height: 120%;
+	word-wrap: break-word;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin: 0 0 0.5em 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	border: 0;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+a,
+input,
+textarea,
+select,
+button,
+label {
+	cursor: pointer;
+}
+
+textarea {
+	resize: none;
+	font-family: sans-serif;
+}
+
+ul,
+ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	li {
+		list-style: none;
+	}
+}
+
+dl,
+dd {
+	margin: 0;
+}
+
+address {
+	font-style: normal;
+}
+
+fieldset {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}

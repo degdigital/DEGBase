@@ -1,0 +1,36 @@
+<?php
+/**
+ * Edited by DEG
+ */
+/**
+ * @var Mage_Page_Block_Html_Header $this
+ */
+?>
+<div class="header-container">
+    <div class="header">
+        <div class="branding">
+            <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo">
+                <strong><?php echo $this->getLogoAlt() ?></strong>
+                <img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" />
+            </a>
+            <?php echo $this->getChildHtml('headerCallout') ?>
+        </div><div class="content">
+            <div class="quick-access">
+                <?php echo $this->getChildHtml('topSearch') ?>
+                <div class="logout"><?php echo $this->getChildHtml('accountLinks') ?></div>
+                <div class="user"><?php echo $this->getChildHtml('topLinks') ?></div>
+                <div class="cart"><?php echo $this->getChildHtml('topCart') ?></div>
+                <div class="checkout">
+                    <a href="<?php echo $this->getUrl('checkout/cart') ?>">
+                        <?php echo $this->__('Checkout') ?>
+                    </a>
+                </div>
+            </div>
+            <?php echo $this->getChildHtml('topMenu') ?>
+        </div>
+    </div>
+    <?php echo $this->getChildHtml('topContainer') ?>
+    <?php if ( $this->helper('customer')->isLoggedIn() ): ?>
+        <p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?></p>
+    <?php endif ?>
+</div>

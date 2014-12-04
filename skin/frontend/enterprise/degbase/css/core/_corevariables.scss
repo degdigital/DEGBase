@@ -1,0 +1,41 @@
+//Core Variables
+
+$color-message-required: #f00;
+
+$color-message-demo: #fff;
+$color-message-demo-bg: #d75f07;
+
+$color-message-global: #444;
+$color-message-global-border: #eee2be;
+$background-message-global: #fff9e9 url("images/icons/ico_alert.png") 2em 5px no-repeat;
+
+$color-message-success: #3d6611;
+$color-message-success-bg: #eff5ea;
+$color-message-success-border: #95a486;
+
+$color-message-error: #f00;
+$color-message-error-bg: #fee;
+$color-message-error-border: #f00;
+
+$color-message-notice: #cdad00;
+$color-message-notice-bg: #ffe;
+$color-message-notice-border: #ffd700;
+
+$color-validation-advice: #f00;
+$color-validation-required: #f00;
+$color-validation-failed-border: #f00;
+
+$color-checkout-wait: #f00;
+$color-checkout-wait-bg: #fff;
+$color-checkout-wait-border: #f00;
+
+$color-form-inputs: #010101;
+$color-form-inputs-bg: #fff;
+$color-form-inputs-border: #ccc;
+$color-form-inputs-select: #f00;
+
+$background-validation-success: url("../images/ico_ok_msg.png");
+$background-validation-error: url("../images/ico_error_msg.png");
+
+$font-family-core-serif: "Georgia", serif;
+$font-family-core-sans-serif: "Arial", sans-serif;

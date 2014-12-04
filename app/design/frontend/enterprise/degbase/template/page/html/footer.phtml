@@ -1,0 +1,20 @@
+<?php
+/**
+ * Edited by DEG
+ */
+?>
+<div class="footer-container">
+    <div class="footer">
+    	<div class="shim">
+        	<?php echo $this->getChildHtml() ?>
+        </div>
+    </div>
+    <div class="sub-footer">
+        <div class="shim">
+            <div class="badges">
+                <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('footer_badges')->toHtml(); ?>
+            </div>
+        	<address class="copyright"><?php echo $this->getCopyright() ?></address>
+        </div>
+    </div>
+</div>

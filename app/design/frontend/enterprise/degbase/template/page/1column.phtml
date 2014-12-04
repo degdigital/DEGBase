@@ -1,0 +1,45 @@
+<?php
+/**
+ * Edited by DEG
+ */
+?>
+<?php
+/**
+ * Template for Mage_Page_Block_Html
+ */
+?>
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="no-js ie ie8" xml:lang="<?php echo $this->getLang() ?>" lang="<?php echo $this->getLang() ?>"> <![endif]-->
+<!--[if IE 9]> <html class="no-js ie ie9" xml:lang="<?php echo $this->getLang() ?>" lang="<?php echo $this->getLang() ?>"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" xml:lang="<?php echo $this->getLang() ?>" lang="<?php echo $this->getLang() ?>"> <!--<![endif]-->
+<head>
+<?php echo $this->getChildHtml('head') ?>
+</head>
+<body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
+<?php echo $this->getChildHtml('after_body_start') ?>
+<div class="wrapper">
+    <?php echo $this->getChildHtml('global_notices') ?>
+    <div class="page">
+        <?php echo $this->getChildHtml('header') ?>
+        <?php echo $this->getChildHtml('header_after') ?>
+        <?php echo $this->getChildHtml('global_messages') ?>
+        <div class="main col1-layout">
+            <?php echo $this->getChildHtml('under_header') ?>
+            <?php echo $this->getChildHtml('breadcrumbsContainer') ?>
+            <div class="main-container">
+                <div class="precontent">
+                    <?php echo $this->getChildHtml('precontent') ?>
+                </div>
+                <div class="col-main">
+                    <?php echo $this->getChildHtml('content') ?>
+                </div>
+            </div>
+        </div>
+        <?php echo $this->getChildHtml('footer_before') ?>
+        <?php echo $this->getChildHtml('footer') ?>
+        <?php echo $this->getChildHtml('before_body_end') ?>
+    </div>
+</div>
+<?php echo $this->getAbsoluteFooter() ?>
+</body>
+</html>

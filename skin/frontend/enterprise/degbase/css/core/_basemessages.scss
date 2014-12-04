@@ -1,0 +1,55 @@
+@import "corevariables";
+
+/* Demo Notice */
+.demo-notice {
+	padding: 0.5em 1em;
+	@include rem('font-size', 1.2rem);
+	text-align: center;
+	color: $color-message-demo; 
+	background-color: $color-message-demo-bg; 
+}
+
+/* Global Notice */
+.notification-global {
+	position: relative;
+	padding: 0.5em 2em 0.5em 4em;
+	font-size: 0.8em;
+	line-height: 140%;
+	border-bottom: 1px solid $color-message-global-border;
+	border-top: 1px solid $color-message-global-border;
+	color: $color-message-global;
+	background: $background-message-global;
+}
+
+/* Messages */
+.messages {
+	padding: 0.5em 1em;
+	margin: 0 auto 1em auto;
+	li {
+		list-style: none;
+		padding: 0.5em 0.5em 0.5em 2em;
+		font-size: 1em;
+		font-weight: bold;
+		ul {
+			padding: 0;
+			li {
+				padding-left: 0;
+			}
+		}
+	}
+	.success-msg {
+		border: 1px solid $color-message-success-border;
+		color: $color-message-success;
+		background-color: $color-message-success-bg;
+	}
+	.error-msg {
+		border: 1px solid $color-message-error-border;
+		color: $color-message-error;
+		background-color: $color-message-error-bg;
+	}
+	.notice-msg {
+		border: 1px solid $color-message-notice-border;
+		color: $color-message-notice;
+		background-color: $color-message-notice-bg;
+	}
+}

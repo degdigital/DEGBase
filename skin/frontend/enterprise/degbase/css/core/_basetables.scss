@@ -1,0 +1,40 @@
+//CSS Tables
+
+@mixin css-table {
+	.table {
+		display: table;
+		@include box-sizing(border-box);
+		width: 100%;
+		empty-cells: show;
+	}
+	.thead {
+		display: table-header-group;
+	}
+	.tbody {
+		display: table-row-group;
+	}
+	.tfoot {
+		display: table-footer-group;
+	}
+	.tr {
+		display: table-row;
+	}
+	.th,
+	.td {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	@content;
+}
+
+//Data tables
+
+.table-caption {
+
+}
+
+.data-table {
+	.link-rss {
+		display: block;
+	}
+}
