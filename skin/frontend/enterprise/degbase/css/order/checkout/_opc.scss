@@ -1,0 +1,196 @@
+//One Page Checkout
+
+.checkout-onepage-index {
+	.col-main {
+		padding: 1.3em 0 0;
+	}
+}
+.opc-wrapper {
+	.page-title {
+		position: relative;
+		z-index:1;
+		.callout {
+			position: absolute;
+			top: 7px;
+			right: 20px;
+			z-index:1;
+		}
+	}
+}
+
+.opc-progress-container {
+	float: left;
+	.opc-block-progress {
+		.block-title {
+			border: 0;
+			strong {
+				padding: 0;
+			}
+		}
+		.block-content {
+			padding: 1.1em 0.8em 1.1em 1.1em;
+		}
+		dt {
+			margin: 0.2em 0 0.5em;
+			font-weight: bold;
+		}
+		dt.complete {
+			font-weight: bold;
+			margin: 0.1em 0 0.2em 0;
+			a {
+				font-weight: normal;
+				text-transform: lowercase;
+			}
+		}
+		dd.complete {
+			padding: 0.3em;
+			margin: 0.3em 0 0.8em;
+		}
+	}
+	.block-progress {
+		.cards-list {
+			dd {
+				padding: 0;
+			}
+			.info-table {
+				th {
+					font-weight: normal;
+				}
+			}
+		}
+	}
+}
+
+.opc {
+	li.section {
+		position: relative;
+	}
+	.step-title {
+		margin: 0 0 1px;
+		h2 {
+			padding:0 1em;
+			font-size: 0.8em;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+	}
+	.allow {
+		.step-title {
+			h2 {
+				cursor:pointer;
+			}
+		}
+	}
+	.active {
+		.step-title {
+			h2 {
+				cursor: default;
+			}
+		}
+	}
+	.step {
+		padding: 1.2em;
+		border-top: 0;
+		.tool-tip {
+			right: 0.7em;
+		}
+	}
+	.order-review {
+		.authentication { }
+		.warning-message {
+			padding: 0.8em 0.8em 0;
+			font-weight: bold;
+			text-align: center;
+			color: #222;
+		}
+	}
+	.form-buttons {
+		width: auto;
+		.button {
+			margin: 0;
+		}
+	}
+	.buttons-set {
+		p.back-link {
+			text-align: left;
+		}
+	}
+	p.required {
+		padding-left: 0;
+		width: auto;
+		text-align: right;
+	}
+	.checkout-agreements {
+		margin: 1.8em;
+	}
+	.centinel {
+		margin: 0;
+		padding: 1.8em;
+	}
+}
+
+//-Steps
+.checkout-onepage-payment-additional-customerbalance {
+	margin-bottom: 0.4em;
+	.checkbox {
+		margin-left: 0;
+	}
+}
+
+#checkout-step-login {
+	height: auto;
+	min-height: 0;
+	p {
+		margin: 0 0 1.1em;
+	}
+	h4 {
+		margin: 0 0 1.1em;
+		font-size: 1.2em;
+		font-weight: normal;
+		color: #000;
+	}
+	.col2-set {
+		padding: 1.3em 1.3em 1.7em;
+		height: auto;
+		min-height: 0;
+		.col-1 { }
+		.col-2 {
+			li {
+				padding-left: 0.8em;
+			}
+			.radio {
+				margin-right: 0.3em;
+			}
+			.form-list {
+				li {
+					padding-left: 0;
+				}
+			}
+		}
+	}
+}
+
+#checkout-step-review {
+	.data-table {
+		border: 0;
+		thead {
+			th {
+				font-size: 0.8em;
+				vertical-align: bottom;
+			}
+		}
+		tfoot {
+			tr.last {
+				strong { }
+			}
+		}
+		.item-options {
+		}
+		.product-name {
+		}
+		.buttons-set {
+			padding: 1.1em 1.4em;
+			margin: 0;
+		}
+	}
+}

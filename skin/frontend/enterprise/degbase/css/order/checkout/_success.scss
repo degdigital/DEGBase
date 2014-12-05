@@ -1,0 +1,26 @@
+//Success
+
+.checkout-onepage-success {
+	.col-main {
+		font-size: 0.8em;
+		p {
+			margin: 0 0 0.8em;
+		}
+	}
+    .data-table {
+        th {
+          text-align: left;
+        }
+      .successSubtotalTh {
+        text-align: right;
+      }
+      tfoot {
+        .shippingAmount, .grandTotal {
+          text-align: right;
+        }
+      }
+      .successRowTotal {
+        text-align: right;
+      }
+    }
+}

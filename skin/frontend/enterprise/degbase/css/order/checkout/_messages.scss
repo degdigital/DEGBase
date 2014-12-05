@@ -1,0 +1,34 @@
+//Messages
+
+@import "core/basevariables";
+
+//-Please Wait
+
+.please-wait {
+	position: absolute;
+	padding: 1.3em;
+	top: 50%;
+	left: 50%;
+	font-size: 0.7em;
+	font-weight: bold;
+	border: 5px solid $color-checkout-wait-border;
+	color: $color-checkout-wait;
+	background: $color-checkout-wait-bg;
+	z-index: 99;
+}
+
+//-Tooltips
+
+.tool-tip {
+	position: absolute;
+	padding: 0.3em;
+	border: 1px solid #ddd;
+	background-color: #f6f6f6;
+	z-index: 999;
+	.btn-close {
+		text-align: right;
+	}
+	.tool-tip-content {
+		padding: 0.3em;
+	}
+}

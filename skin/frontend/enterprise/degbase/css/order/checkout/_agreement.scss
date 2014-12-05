@@ -1,0 +1,23 @@
+//Agreement
+
+.checkout-agreements {
+	li {
+		margin: 0.8em 0;
+	}
+	.agreement-content {
+		overflow: auto;
+		padding: 1.1em;
+		height: 10em;
+		font-size: 0.7em;
+		border: 1px solid #d8cea8;
+		background-color: #fffdef;
+	}
+	.agree {
+		padding: 0.6em 0;
+		font-size: 0.6em;
+		font-weight: bold;
+		.checkbox {
+			margin-right: 0.3em;
+		}
+	}
+}
