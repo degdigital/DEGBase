@@ -1,0 +1,20 @@
+//Base Columns
+
+//-False Columns
+.col2-set {
+	margin: 0 auto 1em auto;
+}
+
+@include breakpoint($screen-size-medium-and-up) {
+	.col2-set {
+		overflow: hidden;
+		.col-1 {
+			float: left;
+			width: 49%;
+		}
+		.col-2 {
+			float: right;
+			width: 49%;
+		}
+	}
+}

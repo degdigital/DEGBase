@@ -1,112 +1,97 @@
 //Base Forms
 
-@import "corevariables";
+@import "core/basevariables";
 
-form {
-	input,
-	textarea,
-	select,
-	button {
-		border: 1px solid $color-form-inputs-border;
-		color: $color-form-inputs;
-		background-color: $color-form-inputs-bg;
-		margin: 0;
-		@include rem('font-size', 1.4rem);
+input,
+textarea,
+select,
+button {
+	border: 1px solid $color-form-inputs-border;
+	color: $color-form-inputs;
+	background-color: $color-form-inputs-bg;
+}
+input[type="radio"],
+input[type="checkbox"]{
+	border: 0;
+	background-color: transparent;
+}
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+	outline: 1px dotted $color-form-inputs-select;
+}
+input[type="radio"]:focus {
+	outline: none;
+}
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="search"] {
+	padding: 0.25em;
+	max-width: 100%;
+}
+label {
+	display: block;
+}
+.form-list {
+	overflow: hidden;
+	li {
+		vertical-align: top;
 	}
-	input[type="radio"],
-	input[type="checkbox"]{
-		float: left;
-		margin: 0 0.5em 0 0.1em;
-		border: 0;
-		background-color: transparent;
+}
+.fieldset {
+	.legend {
+		margin: 0 0 1em 0;
 	}
-	input:focus,
-	textarea:focus,
-	select:focus,
-	button:focus {
-		outline: 1px dotted $color-form-inputs-select;
+	.form-list {
+		margin: 0.75em 0;
 	}
-	input[type="radio"]:focus {
-		outline: none;
+}
+.input-box {
+	position: relative;
+}
+.form-list {
+	li {
+		margin-bottom: 0.5em;
+		.validation-advice {
+			margin: 0;
+		}
 	}
-	select,
-	textarea,
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	input[type="search"] {
-		@include box-sizing("border-box");
+	.fields {
+		margin-bottom: 0;
+	}
+	.input-text,
+	select {
+		width: 100%;
+	}
+	.control {
+		padding: 0.25em 0;
+		label {
+			margin-right: 0.5em;
+		}
+		.input-box {
+			float: left;
+			padding-top: 0.4em;
+		}
+	}
+
+	.field {
+		margin-bottom: 0.75em;
+	}
+}
+.input-box,
+.date-input {
+	.input-text,
+	select {
 		padding: 0.25em;
-		max-width: 100%;
-	}
-	label {
-		display: block;
-	}
-	.form-list {
-		overflow: hidden;
-		li {
-			list-style: none;
-			vertical-align: top;
-		}
-	}
-	.fieldset {
-		.legend {
-			margin: 0 0 1em 0;
-			font-size: 1.3em;
-			font-weight: normal;
-		}
-		.form-list {
-			margin: 0.75em 0;
-		}
-	}
-	.input-box {
-		position: relative;
-	}
-	.form-list {
-		li {
-			@include pie-clearfix;
-			clear: both;
-			margin-bottom: 0.5em;
-			.validation-advice {
-				margin: 0;
-				font-size: 0.9em;
-				line-height: 1.25em;
-			}
-		}
-		li.fields {
-			margin-bottom: 0;
-		}
-		.input-text,
-		select {
-			width: 100%;
-		}
-		.control {
-			padding: 0.25em 0;
-			label {
-				margin-right: 0.5em;
-			}
-			.input-box {
-				float: left;
-				padding-top: 0.4em;
-			}
-		}
-
-		.field {
-			margin-bottom: 0.75em;
-		}
-	}
-	.input-box,
-	.date-input {
-		@include box-sizing(border-box);
-		.input-text,
-		select {
-			padding: 0.25em;
-		}
 	}
 }
 
 .buttons-set {
-	@include pie-clearfix;
+	@include simple-clearfix;
 }
 
 .validation-advice {
@@ -162,13 +147,8 @@ span.validation-passed {
 	width: 2.5em;
 }
 
-@media screen and (min-width: 35.375em) {
-	/* 566px */
-
+@include breakpoint($screen-size-medium-and-up) {
 	.form-list {
-		label {
-			line-height: 2em;
-		}
 		.input-box {
 			.range {
 				.input-text {
@@ -177,7 +157,7 @@ span.validation-passed {
 			}
 		}
 		.field {
-			@include pie-clearfix;
+			@include simple-clearfix;
 		}
 		.control {
 			label,

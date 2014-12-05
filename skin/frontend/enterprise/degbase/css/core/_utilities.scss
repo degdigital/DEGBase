@@ -12,6 +12,15 @@ $font-body-px: 16;
   background-image: none, image-url('#{$name}.svg');
 }
 
+//Clean Clearfix
+@mixin simple-clearfix() {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
 // HTML5 Placeholder Styling
 @mixin placeholder() {
     .placeholder,

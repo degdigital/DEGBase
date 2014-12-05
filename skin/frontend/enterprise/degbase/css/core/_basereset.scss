@@ -2,14 +2,21 @@
 @media screen {
 	@viewport {
 		width: device-width;
-	    zoom: 1;
+		zoom: 1;
 		max-zoom: 1;
-	    user-zoom: fixed;
+		user-zoom: fixed;
 	}
 }
 
 html {
-	 font-size: 62.5%;
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
 }
 
 body {
@@ -18,6 +25,18 @@ body {
 	@include rem('font-size', 1.6rem);
 	line-height: 120%;
 	word-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin:  0 0 1em 0;
+	padding: 0;
+	line-height: 1.2;
 }
 
 a {
@@ -53,7 +72,6 @@ label {
 
 textarea {
 	resize: none;
-	font-family: sans-serif;
 }
 
 ul,

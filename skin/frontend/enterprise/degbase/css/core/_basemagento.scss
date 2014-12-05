@@ -1,0 +1,48 @@
+@import "core/basevariables";
+
+//-Generic Classes
+
+.clearfix {
+	@include simple-clearfix;
+}
+.a-center {
+	text-align: center;
+}
+.a-left {
+	text-align: left;
+}
+.a-right {
+	text-align: right;
+}
+.v-top {
+	vertical-align: top;
+}
+.v-middle {
+	vertical-align: middle;
+}
+.v-bottom {
+	vertical-align: bottom;
+}
+.required {
+	em {
+		padding: 0 0.5em 0 0;
+		font-size: 0.8em;
+		font-style: normal;
+		color: $color-validation-required;
+	}
+}
+p.required {
+	font-size: 0.8em;
+	color: $color-validation-required;
+}
+
+.back-link {
+	font-size: 0.8em;
+}
+
+.hidden,
+.no-display,
+.mobile-only,
+.logged-out {
+	display: none;
+}
