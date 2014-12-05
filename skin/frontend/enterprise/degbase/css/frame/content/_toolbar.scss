@@ -1,0 +1,70 @@
+//Toolbar
+.toolbar {
+	@include simple-clearfix;
+	clear: both;
+	font-size: 1.2em;
+	.pager {
+		border-width: 1px 0;
+	}
+}
+
+//-Pager
+.sorter,
+.pager {
+	overflow: hidden;
+	padding: 0 0.3em;
+}
+
+.pager {
+	margin: 1em 0;
+	p {
+		margin: 0;
+	}
+	select {
+		margin-bottom: 1px;
+	}
+	.limiter {
+		label {
+			font-weight: inherit;
+		}
+	}
+	.pages {
+		text-align: center;
+		ol,
+		li {
+			display: inline;
+			padding: 0 0.2em;
+		}
+		.current {
+			font-weight: bold;
+		}
+	}
+}
+
+.pager-only {
+	clear: both;
+	.pages {
+		margin: 0;
+	}
+}
+
+//-Sorter
+.sorter {
+	font-size: 0.8em;
+	p {
+		margin:0;
+	}
+	select {
+		margin-bottom: 1px;
+	}
+	.view-mode {
+		float: left;
+		label {
+			float: left;
+			margin: 0 0.6em 0 0;
+		}
+	}
+	.sort-by {
+		line-height: 20px;
+	}
+}

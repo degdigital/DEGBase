@@ -1,0 +1,26 @@
+//Tabs
+
+.tab-list {
+	position: relative;
+	.tab {
+		float: left;
+		cursor: pointer;
+	}
+	.active {
+		cursor: default;
+	}
+}
+
+.collateral-tabs {
+	.tab-container {
+	}
+	.tab-container.active {
+	}
+	.tabs {
+		li {
+			a {
+				display: block;
+			}
+		}
+	}
+}
