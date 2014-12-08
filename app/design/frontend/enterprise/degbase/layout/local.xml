@@ -11,10 +11,9 @@
             <action method="removeItem"><type>skin_css</type><name>css/styles-ie.css</name><params /></action>
             <action method="removeItem"><type>js</type><name>lib/ds-sleight.js</name><params /><if>lt IE 7</if></action>
             <action method="removeItem"><type>skin_js</type><name>js/slider.js</name></action>
-            <action method="addItem"><type>js</type><name>plugins/respond.js</name><params /></action>
-            <action method="addItem"><type>js</type><name>plugins/modernizr.js</name></action>
-            <action method="addItem"><type>js</type><name>plugins/minwidth.js</name><params /></action>
-            <action method="addItem"><type>js</type><name>jquery/jquery-1.10.2.min.js</name></action>
+            <action method="addItem"><type>skin_js</type><name>js/plugins/respond.js</name><params /></action>
+            <action method="addItem"><type>skin_js</type><name>js/plugins/modernizr.js</name></action>
+            <action method="addItem"><type>skin_js</type><name>js/plugins/jquery-1.11.1.js</name></action>
         </reference>
         <reference name="right">
             <remove name="catalog.compare.sidebar" />
@@ -29,7 +28,6 @@
 
     <customer_logged_out>
         <reference name="head">
-            <action method="addItem"><type>skin_css</type><name>css/account.css</name></action>
             <action method="addItem"><type>skin_css</type><name>css/loggedout.css</name></action>
         </reference>
     </customer_logged_out>
