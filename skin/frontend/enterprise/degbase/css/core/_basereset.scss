@@ -1,16 +1,17 @@
 //Base Reset
 @media screen {
-	@viewport {
+	@viewport,
+	@-ms-viewport,
+	@-o-viewport {
 		width: device-width;
 		zoom: 1;
-		max-zoom: 1;
-		user-zoom: fixed;
 	}
 }
 
 html {
 	font-size: 62.5%;
 	box-sizing: border-box;
+	-webkit-text-size-adjust: 100%;
 }
 
 *,
@@ -25,6 +26,26 @@ body {
 	@include rem('font-size', 1.6rem);
 	line-height: 120%;
 	word-wrap: break-word;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
 }
 
 h1,
@@ -45,6 +66,10 @@ a {
 
 p {
 	margin: 0 0 0.5em 0;
+}
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
 img {
@@ -97,4 +122,13 @@ fieldset {
 	padding: 0;
 	margin: 0;
 	border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+[hidden] {
+  display: none;
 }

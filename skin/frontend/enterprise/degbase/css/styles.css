@@ -1,23 +1,24 @@
 @media screen {
-  @viewport {
+  @viewport ,
+	@-ms-viewport,
+	@-o-viewport {
     width: device-width;
-    zoom: 1;
-    max-zoom: 1;
-    user-zoom: fixed; } }
+    zoom: 1; } }
 /* line 11, core/_basereset.scss */
 html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  -webkit-text-size-adjust: 100%; }
 
-/* line 16, core/_basereset.scss */
+/* line 17, core/_basereset.scss */
 *,
 *:before,
 *:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
-/* line 22, core/_basereset.scss */
+/* line 23, core/_basereset.scss */
 body {
   padding: 0;
   margin: 0;
@@ -26,7 +27,27 @@ body {
   line-height: 120%;
   word-wrap: break-word; }
 
-/* line 30, core/_basereset.scss */
+/* line 31, core/_basereset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block; }
+
+/* line 45, core/_basereset.scss */
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+/* line 51, core/_basereset.scss */
 h1,
 h2,
 h3,
@@ -38,29 +59,33 @@ p {
   padding: 0;
   line-height: 1.2; }
 
-/* line 42, core/_basereset.scss */
+/* line 63, core/_basereset.scss */
 a {
   text-decoration: none; }
 
-/* line 46, core/_basereset.scss */
+/* line 67, core/_basereset.scss */
 p {
   margin: 0 0 0.5em 0; }
 
-/* line 50, core/_basereset.scss */
+/* line 71, core/_basereset.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/* line 75, core/_basereset.scss */
 img {
   max-width: 100%;
   height: auto;
   border: 0; }
 
-/* line 56, core/_basereset.scss */
+/* line 81, core/_basereset.scss */
 strong {
   font-weight: bold; }
 
-/* line 60, core/_basereset.scss */
+/* line 85, core/_basereset.scss */
 em {
   font-style: italic; }
 
-/* line 64, core/_basereset.scss */
+/* line 89, core/_basereset.scss */
 a,
 input,
 textarea,
@@ -69,35 +94,44 @@ button,
 label {
   cursor: pointer; }
 
-/* line 73, core/_basereset.scss */
+/* line 98, core/_basereset.scss */
 textarea {
   resize: none; }
 
-/* line 77, core/_basereset.scss */
+/* line 102, core/_basereset.scss */
 ul,
 ol {
   list-style: none;
   padding: 0;
   margin: 0; }
-  /* line 82, core/_basereset.scss */
+  /* line 107, core/_basereset.scss */
   ul li,
   ol li {
     list-style: none; }
 
-/* line 87, core/_basereset.scss */
+/* line 112, core/_basereset.scss */
 dl,
 dd {
   margin: 0; }
 
-/* line 92, core/_basereset.scss */
+/* line 117, core/_basereset.scss */
 address {
   font-style: normal; }
 
-/* line 96, core/_basereset.scss */
+/* line 121, core/_basereset.scss */
 fieldset {
   padding: 0;
   margin: 0;
   border: 0; }
+
+/* line 127, core/_basereset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 132, core/_basereset.scss */
+[hidden] {
+  display: none; }
 
 /* Demo Notice */
 /* line 4, core/_basemessages.scss */
