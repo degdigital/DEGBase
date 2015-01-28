@@ -69,12 +69,13 @@ label {
 	}
 	.control {
 		padding: 0.25em 0;
+		label,
+		.input-box {
+			display: inline-block;
+			vertical-align: middle;
+		}
 		label {
 			margin-right: 0.5em;
-		}
-		.input-box {
-			float: left;
-			padding-top: 0.4em;
 		}
 	}
 

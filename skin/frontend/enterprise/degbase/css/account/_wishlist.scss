@@ -1,0 +1,55 @@
+//Wishlist
+
+@import "product/cart/cart";
+
+.my-wishlist {
+	table {
+		margin-bottom: 1em;
+		width: 100%;
+	}
+	td {
+		padding: 0.25em;
+	}
+	textarea {
+		width: 100%;
+		min-height: 4em;
+	}
+	.btn-remove {
+		&:before {
+			content: $icon-remove;
+			font-size: 4rem;
+		}
+		span {
+			display: none;
+		}
+	}
+	.btn-cart,
+	.link-edit {
+		display: inline-block;
+		width: 8em;
+		text-align: center;
+	}
+	.product-name {
+		margin-bottom: 0.25em;
+	}
+}
+
+.customer-wishlist-item-image {
+	width: calc(113px + 0.5em);
+}
+
+.customer-wishlist-item-price {
+	text-align: center;
+}
+
+.customer-wishlist-item-cart {
+	p {
+		text-align: center;
+	}
+}
+
+@include breakpoint($width-30-and-down) {
+	.customer-wishlist-item-image {
+		margin: 0 auto 1rem auto;
+	}
+}
