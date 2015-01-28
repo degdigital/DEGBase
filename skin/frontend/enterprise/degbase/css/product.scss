@@ -1,0 +1,12 @@
+//Product Page Example
+
+//-No Output
+@import "compass/utilities",
+	"core/utilities",
+	"core/basevariables",
+	"variables";
+
+//Example
+@import "product/detail/detail",
+	"product/list/list",
+	"product/cart/cart";

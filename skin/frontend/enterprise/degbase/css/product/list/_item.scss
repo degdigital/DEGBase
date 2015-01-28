@@ -1,0 +1,27 @@
+//Grid Items
+
+.item {
+	display: inline-block;
+	margin-bottom: 1em;
+	a,
+	img {
+		display: block;
+	}
+	img {
+		margin: 0 auto 0.5em auto;
+	}
+	.product-name {
+		margin-bottom: 0.5em;
+		font-size: 1.8rem;
+	}
+	.button {
+		margin-bottom: 0.25em;
+	}
+	.add-to-links {
+		font-size: 0.8em;
+		a,
+		li {
+			display: inline-block;
+		}
+	}
+}

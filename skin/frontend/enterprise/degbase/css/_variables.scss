@@ -79,17 +79,17 @@ $font-weight-bold: 700;
 //-Icons
 
 //-Media Queries
-$screen-size-10-and-down: "screen and (max-width: " + pxToEm(319) + ")";
-$screen-size-10-and-up: "screen and (min-width: " + pxToEm(320) + ")";
-$screen-size-20-and-down: "screen and (max-width: " + pxToEm(399) + ")";
-$screen-size-20-and-up: "screen and (min-width: " + pxToEm(400) + ")";
-$screen-size-30-and-down: "screen and (max-width: " + pxToEm(599) + ")";
-$screen-size-30-and-up: "screen and (min-width: " + pxToEm(600) + ")";
-$screen-size-40-and-down: "screen and (max-width: " + pxToEm(799) + ")";
-$screen-size-40-and-up: "screen and (min-width: " + pxToEm(800) + ")";
-$screen-size-50-and-down: "screen and (max-width: " + pxToEm(959) + ")";
-$screen-size-50-and-up: "screen and (min-width: " + pxToEm(960) + ")";
-$screen-size-60-and-down: "screen and (max-width: " + pxToEm(1023) + ")";
-$screen-size-60-and-up: "screen and (min-width: " + pxToEm(1024) + ")";
-$screen-size-70-and-down: "screen and (max-width: #{$width-frame-max})";
-$screen-size-70-and-up: "screen and (min-width: #{$width-frame-max})";
+$width-10-and-down: "screen and (max-width: " + pxToEm(319) + ")";
+$width-10-and-up: "screen and (min-width: " + pxToEm(320) + ")";
+$width-20-and-down: "screen and (max-width: " + pxToEm(399) + ")";
+$width-20-and-up: "screen and (min-width: " + pxToEm(400) + ")";
+$width-30-and-down: "screen and (max-width: " + pxToEm(599) + ")";
+$width-30-and-up: "screen and (min-width: " + pxToEm(600) + ")";
+$width-40-and-down: "screen and (max-width: " + pxToEm(799) + ")";
+$width-40-and-up: "screen and (min-width: " + pxToEm(800) + ")";
+$width-50-and-down: "screen and (max-width: " + pxToEm(959) + ")";
+$width-50-and-up: "screen and (min-width: " + pxToEm(960) + ")";
+$width-60-and-down: "screen and (max-width: " + pxToEm(1023) + ")";
+$width-60-and-up: "screen and (min-width: " + pxToEm(1024) + ")";
+$width-70-and-down: "screen and (max-width: #{$width-frame-max})";
+$width-70-and-up: "screen and (min-width: #{$width-frame-max})";
