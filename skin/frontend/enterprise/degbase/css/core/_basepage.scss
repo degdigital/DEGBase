@@ -1,0 +1,75 @@
+//Basic Page Styles
+
+.main {
+	@include simple-clearfix;
+}
+
+.main-container {
+	margin: 0 auto;
+	max-width: $width-content-max;
+}
+
+.flexbox {
+	.main-container {
+		display: flex;
+	}
+	.col1-layout {
+		.col-main {
+			flex-grow: 1;
+		}
+	}
+}
+
+@include breakpoint($screen-size-medium-and-down) {
+	.flexbox {
+		.main-container {
+			flex-direction: column;
+		}
+	}
+}
+
+@include breakpoint($screen-size-medium-and-up) {
+	.col2-right-layout,
+	.col2-left-layout {
+		.col-main {
+			width: 80%;
+		}
+		.sidebar {
+			width: 20%;
+		}
+		.col-right {
+			padding-left: 1em;
+		}
+		.col-left {
+			padding-right: 1em;
+		}
+	}
+	.no-flexbox {
+		.col2-right-layout,
+		.col2-left-layout {
+			.col-main {
+				float: left;
+			}
+			.col-right {
+				float: right;
+			}
+			.col-left {
+				float: left;
+			}
+		}
+		.col2-left-layout {
+			.col-main {
+				float: right;
+			}
+		}
+	}
+}
+
+@include breakpoint($screen-size-large-and-down) {
+	.col1-layout {
+		.col-main {
+			padding-right: 1em;
+			padding-left: 1em;
+		}
+	}
+}

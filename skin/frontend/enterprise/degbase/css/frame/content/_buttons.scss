@@ -1,0 +1,11 @@
+//Buttons
+
+.button {
+	display: inline-block;
+	color: $color-button;
+	background-color: $color-button-bg;
+}
+
+.button-secondary {
+	background-color: $color-button-secondary-bg;
+}

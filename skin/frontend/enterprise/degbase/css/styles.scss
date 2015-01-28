@@ -12,6 +12,13 @@
     "core/baseforms",
     "core/basetables",
     "core/basemagento",
+    "core/basepage",
     "core/basecolumns",
     "core/baseprint";
 
+@import "variables",
+    "frame/header/header",
+    "frame/menu/menu",
+    "frame/footer/footer",
+    "frame/aside/aside",
+    "frame/content/content";

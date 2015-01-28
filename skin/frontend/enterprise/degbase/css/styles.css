@@ -421,6 +421,76 @@ p.required {
 .logged-out {
   display: none; }
 
+/* line 17, core/_utilities.scss */
+.main:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* line 7, core/_basepage.scss */
+.main-container {
+  margin: 0 auto;
+  max-width: 75em; }
+
+/* line 13, core/_basepage.scss */
+.flexbox .main-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+/* line 17, core/_basepage.scss */
+.flexbox .col1-layout .col-main {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+@media screen and (max-width: 49.9375em) {
+  /* line 25, core/_basepage.scss */
+  .flexbox .main-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+@media screen and (min-width: 50em) {
+  /* line 34, core/_basepage.scss */
+  .col2-right-layout .col-main,
+  .col2-left-layout .col-main {
+    width: 80%; }
+  /* line 37, core/_basepage.scss */
+  .col2-right-layout .sidebar,
+  .col2-left-layout .sidebar {
+    width: 20%; }
+  /* line 40, core/_basepage.scss */
+  .col2-right-layout .col-right,
+  .col2-left-layout .col-right {
+    padding-left: 1em; }
+  /* line 43, core/_basepage.scss */
+  .col2-right-layout .col-left,
+  .col2-left-layout .col-left {
+    padding-right: 1em; }
+
+  /* line 50, core/_basepage.scss */
+  .no-flexbox .col2-right-layout .col-main,
+  .no-flexbox .col2-left-layout .col-main {
+    float: left; }
+  /* line 53, core/_basepage.scss */
+  .no-flexbox .col2-right-layout .col-right,
+  .no-flexbox .col2-left-layout .col-right {
+    float: right; }
+  /* line 56, core/_basepage.scss */
+  .no-flexbox .col2-right-layout .col-left,
+  .no-flexbox .col2-left-layout .col-left {
+    float: left; }
+  /* line 61, core/_basepage.scss */
+  .no-flexbox .col2-left-layout .col-main {
+    float: right; } }
+@media screen and (max-width: 63.9375em) {
+  /* line 70, core/_basepage.scss */
+  .col1-layout .col-main {
+    padding-right: 1em;
+    padding-left: 1em; } }
 /* line 4, core/_basecolumns.scss */
 .col2-set {
   margin: 0 auto 1em auto; }
@@ -445,3 +515,97 @@ p.required {
   /* line 10, core/_baseprint.scss */
   .no-print {
     display: none; } }
+/* line 3, frame/content/_buttons.scss */
+.button {
+  display: inline-block;
+  color: #fefefe;
+  background-color: #b81237; }
+
+/* line 9, frame/content/_buttons.scss */
+.button-secondary {
+  background-color: #272727; }
+
+/* line 3, frame/content/_tabs.scss */
+.tab-list {
+  position: relative; }
+  /* line 5, frame/content/_tabs.scss */
+  .tab-list .tab {
+    float: left;
+    cursor: pointer; }
+  /* line 9, frame/content/_tabs.scss */
+  .tab-list .active {
+    cursor: default; }
+
+/* line 21, frame/content/_tabs.scss */
+.collateral-tabs .tabs li a {
+  display: block; }
+
+/* line 2, frame/content/_toolbar.scss */
+.toolbar {
+  clear: both;
+  font-size: 1.2em; }
+  /* line 17, core/_utilities.scss */
+  .toolbar:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 6, frame/content/_toolbar.scss */
+  .toolbar .pager {
+    border-width: 1px 0; }
+
+/* line 12, frame/content/_toolbar.scss */
+.sorter,
+.pager {
+  overflow: hidden;
+  padding: 0 0.3em; }
+
+/* line 18, frame/content/_toolbar.scss */
+.pager {
+  margin: 1em 0; }
+  /* line 20, frame/content/_toolbar.scss */
+  .pager p {
+    margin: 0; }
+  /* line 23, frame/content/_toolbar.scss */
+  .pager select {
+    margin-bottom: 1px; }
+  /* line 27, frame/content/_toolbar.scss */
+  .pager .limiter label {
+    font-weight: inherit; }
+  /* line 31, frame/content/_toolbar.scss */
+  .pager .pages {
+    text-align: center; }
+    /* line 33, frame/content/_toolbar.scss */
+    .pager .pages ol,
+    .pager .pages li {
+      display: inline;
+      padding: 0 0.2em; }
+    /* line 38, frame/content/_toolbar.scss */
+    .pager .pages .current {
+      font-weight: bold; }
+
+/* line 44, frame/content/_toolbar.scss */
+.pager-only {
+  clear: both; }
+  /* line 46, frame/content/_toolbar.scss */
+  .pager-only .pages {
+    margin: 0; }
+
+/* line 52, frame/content/_toolbar.scss */
+.sorter {
+  font-size: 0.8em; }
+  /* line 54, frame/content/_toolbar.scss */
+  .sorter p {
+    margin: 0; }
+  /* line 57, frame/content/_toolbar.scss */
+  .sorter select {
+    margin-bottom: 1px; }
+  /* line 60, frame/content/_toolbar.scss */
+  .sorter .view-mode {
+    float: left; }
+    /* line 62, frame/content/_toolbar.scss */
+    .sorter .view-mode label {
+      float: left;
+      margin: 0 0.6em 0 0; }
+  /* line 67, frame/content/_toolbar.scss */
+  .sorter .sort-by {
+    line-height: 20px; }

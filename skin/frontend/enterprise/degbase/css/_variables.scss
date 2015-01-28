@@ -79,17 +79,17 @@ $font-weight-bold: 700;
 //-Icons
 
 //-Media Queries
-$screen-size-1-and-down: "screen and (max-width: " + pxToEm(319) + ")";
-$screen-size-1-and-up: "screen and (min-width: " + pxToEm(320) + ")";
-$screen-size-2-and-down: "screen and (max-width: " + pxToEm(399) + ")";
-$screen-size-2-and-up: "screen and (min-width: " + pxToEm(400) + ")";
-$screen-size-3-and-down: "screen and (max-width: " + pxToEm(599) + ")";
-$screen-size-3-and-up: "screen and (min-width: " + pxToEm(600) + ")";
-$screen-size-4-and-down: "screen and (max-width: " + pxToEm(799) + ")";
-$screen-size-4-and-up: "screen and (min-width: " + pxToEm(800) + ")";
-$screen-size-5-and-down: "screen and (max-width: " + pxToEm(959) + ")";
-$screen-size-5-and-up: "screen and (min-width: " + pxToEm(960) + ")";
-$screen-size-6-and-down: "screen and (max-width: " + pxToEm(1023) + ")";
-$screen-size-6-and-up: "screen and (min-width: " + pxToEm(1024) + ")";
-$screen-size-7-and-down: "screen and (max-width: #{$width-frame-max})";
-$screen-size-7-and-up: "screen and (min-width: #{$width-frame-max})";
+$screen-size-10-and-down: "screen and (max-width: " + pxToEm(319) + ")";
+$screen-size-10-and-up: "screen and (min-width: " + pxToEm(320) + ")";
+$screen-size-20-and-down: "screen and (max-width: " + pxToEm(399) + ")";
+$screen-size-20-and-up: "screen and (min-width: " + pxToEm(400) + ")";
+$screen-size-30-and-down: "screen and (max-width: " + pxToEm(599) + ")";
+$screen-size-30-and-up: "screen and (min-width: " + pxToEm(600) + ")";
+$screen-size-40-and-down: "screen and (max-width: " + pxToEm(799) + ")";
+$screen-size-40-and-up: "screen and (min-width: " + pxToEm(800) + ")";
+$screen-size-50-and-down: "screen and (max-width: " + pxToEm(959) + ")";
+$screen-size-50-and-up: "screen and (min-width: " + pxToEm(960) + ")";
+$screen-size-60-and-down: "screen and (max-width: " + pxToEm(1023) + ")";
+$screen-size-60-and-up: "screen and (min-width: " + pxToEm(1024) + ")";
+$screen-size-70-and-down: "screen and (max-width: #{$width-frame-max})";
+$screen-size-70-and-up: "screen and (min-width: #{$width-frame-max})";
